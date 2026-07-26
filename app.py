@@ -15,7 +15,7 @@ if CURRENT_ENV == "UAT":
     app.config.update(
         DEBUG=False,
         TESTING=False,
-        ENV_NAME="Production",
+        ENV_NAME="UAT",
         DATABASE_URL="postgresql://prod_user:password@prod-db-host:5432/mydb",
         PORT=8080,
     )
@@ -37,7 +37,7 @@ else:  # "dev" (default)
     )
 
 
-@app.route("/", methods=["GET"])
+@app.route("/", methods=["POST"])
 def home():
     return jsonify({
         "status": "success",
