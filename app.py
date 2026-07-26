@@ -6,10 +6,10 @@ app = Flask(__name__)
 # ==========================================
 # CHANGE THIS TO: "dev", "testing", OR "prod"
 # ==========================================
-CURRENT_ENV = "dev"
+CURRENT_ENV = "Testing"
 
 # Set configurations based on hardcoded environment
-if CURRENT_ENV =="dev":
+if CURRENT_ENV =="Test":
     app.config.update(
         DEBUG=False,
         TESTING=False,
