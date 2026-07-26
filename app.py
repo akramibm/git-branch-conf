@@ -6,28 +6,16 @@ app = Flask(__name__)
 # ==========================================
 # CHANGE THIS TO: "dev", "testing", OR "prod"
 # ==========================================
-<<<<<<< HEAD
-<<<<<<< HEAD
-CURRENT_ENV = "Testing"
 
-# Set configurations based on hardcoded environment
-if CURRENT_ENV =="Test":
-=======
-CURRENT_ENV = "test"
-
-# Set configurations based on hardcoded environment
-if CURRENT_ENV == "test":
->>>>>>> 2479a46 (push)
-=======
 CURRENT_ENV = "UAT"
 
 # Set configurations based on hardcoded environment
 if CURRENT_ENV == "UAT":
->>>>>>> 697a656 (UAT)
+
     app.config.update(
         DEBUG=False,
         TESTING=False,
-        ENV_NAME="UAT",
+        ENV_NAME="Production",
         DATABASE_URL="postgresql://prod_user:password@prod-db-host:5432/mydb",
         PORT=8080,
     )
